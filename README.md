@@ -2,7 +2,7 @@
 
 # Qualité des données ERP & contrôle opérationnel
 
-### *Transformer les données brutes ERP en leviers décisionnels — avec Power BI*
+### *Transformer la qualité des données ERP en décisions opérationnelles concrètes*
 
 <br/>
 
@@ -35,6 +35,20 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 **Ce tableau de bord automatise la surveillance, détecte les anomalies et oriente les équipes vers les actions à haute valeur.**
 
 ---
+## Cas d’usage métier
+
+Ce tableau de bord permet à une organisation de :
+
+• Identifier rapidement les anomalies critiques  
+• Prioriser les actions correctives  
+• Réduire les coûts liés aux erreurs de données  
+• Améliorer la performance des fournisseurs et des acheteurs  
+
+---
+
+## Aperçu du tableau de bord
+
+---
 
 ## Aperçu du tableau de bord
 
@@ -44,7 +58,7 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 
 ![Vue d'ensemble – Qualité des données ERP](captures/tab1-overview.png)
 
-**Ce qu'on voit en 10 secondes :**
+**Lecture en 10 secondes :**
 - **500 commandes** analysées
 - **366 commandes affectées** (73.2% du portefeuille)
 - **291 livraisons en retard** — risque opérationnel critique
@@ -62,13 +76,13 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 - **Exposition financière estimée : 12,43 M$** — quantification directe du risque
 - **J. Bouchard (83 anomalies)** — acheteur avec le taux le plus élevé, nécessite un audit
 - **Niveau de risque Moyen domine (227)** vs Élevé (18) — opportunité d'intervention préventive
-- Drill-down par fournisseur → catégorie → usine → acheteur possible en un clic
+- Exploration hiérarchique par fournisseur → catégorie → usine → acheteur possible en un clic
 
 ---
 
 ### Onglet 3 — Analyse des causes des anomalies
 
-> Décomposition waterfall par type d'anomalie et arbre de causes racines par niveau de risque
+> Décomposition graphique en cascade par type d'anomalie et arbre de causes racines par niveau de risque
 
 ![Analyse des causes des anomalies](captures/tab3-causes.png)
 
@@ -78,7 +92,7 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 • **Livraison en retard (291)** et **fournisseur non approuvé (140)** représentent 78 % des anomalies — priorités d’action claires  
 • **Prix anormal (50), date manquante (30), quantité invalide (20) et ID invalide (18)** — anomalies de données structurelles à corriger à la source ERP  
 • **Arbre des causes racines** : décomposition interactive des 348 anomalies par niveau de risque (moyen : 227 / faible : 103 / élevé : 18)  
-• Possibilité de drill-down sur chaque nœud pour isoler les combinaisons fournisseur × type × risque  
+• Possibilité de exploration hiérarchique sur chaque nœud pour isoler les combinaisons fournisseur × type × risque  
 
 ---
 ## Architecture & flux de données
@@ -127,7 +141,7 @@ CALCULATE(
 
 ### Conception du tableau de bord
 - Filtres croisés dynamiques (Usine / Acheteur / Fournisseur / Période)
-- Drill-down hiérarchique : Fournisseur → Catégorie → Usine → Acheteur
+- Exploration hiérarchique hiérarchique : Fournisseur → Catégorie → Usine → Acheteur
 - KPI cards avec seuils visuels
 - Palette cohérente orientée lisibilité opérationnelle
 
@@ -139,7 +153,7 @@ CALCULATE(
 |---|---|
 | Commandes analysées | 500 |
 | Anomalies détectées | 549 |
-| Taux d'anomalies | **73.2%** |
+| Taux d'anomalies | **73,2%** |
 | Exposition financière estimée | **12,43 M$** |
 | Livraisons en retard | 291 |
 | Fournisseurs à risque concentré | 3 (Ferantis, Gagnon Inc, Nordex) |
@@ -149,7 +163,7 @@ CALCULATE(
 
 ## Pourquoi ce projet se distingue
 
-Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérience terrain** en solution analytique :
+Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérience terrain** en solution analytique conçu pour être directement transposable dans un environnement ERP réel :
 
 - **Domaine métier profond** : Les règles de validation reflètent de vraies pratiques d'achat (PO, réception, facturation)
 - **Pensée système** : Du problème ERP → ETL → modèle → KPI → décision opérationnelle
@@ -175,6 +189,7 @@ Cette vue illustre l’organisation globale du projet, structurée en trois comp
 ---
 
 ## Utilisation
+Ce projet utilise des données synthétiques à des fins de démonstration.
 
 ```bash
 # 1. Cloner le dépôt
