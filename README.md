@@ -14,8 +14,8 @@
 <br/>
 
 > **Problème réel. Données synthétiques. Impact opérationnel concret.**  
-> Ce projet démontre comment un professionnel des achats avec 20+ ans d'expérience  
-> traduit les lacunes ERP en tableaux de bord décisionnels prêts pour la production.
+> Ce projet démontre comment transformer des problématiques de qualité des données ERP en tableaux de bord décisionnels 
+> exploitables.
 
 </div>
 
@@ -45,7 +45,7 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 ![Vue d'ensemble – Qualité des données ERP](captures/tab1-overview.png)
 
 **Ce qu'on voit en 10 secondes :**
-- **500 commandes** analysées → **502 anomalies détectées** (certaines commandes en cumulent plusieurs)
+- **500 commandes** analysées
 - **366 commandes affectées** (73.2% du portefeuille)
 - **291 livraisons en retard** — risque opérationnel critique
 - Concentration chez 3 fournisseurs : **Ferantis, Gagnon Inc, Nordex** (>100 anomalies chacun)
@@ -73,11 +73,12 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 ![Analyse des causes des anomalies](captures/tab3-causes.png)
 
 **Ce qu'on voit en 10 secondes :**
-- **549 anomalies totales** décomposées en 6 catégories distinctes via un graphique en cascade
-- **Livraison en retard (291)** et **Fournisseur non approuvé (140)** représentent 78% des anomalies — priorités d'action claires
-- **Prix anormal (50), Date manquante (30), Quantité invalide (20), ID invalide (18)** — anomalies de données structurelles à corriger à la source ERP
-- **Arbre de causes racines** : décomposition interactive des 348 anomalies par niveau de risque (Moyen : 227 / Faible : 103 / Élevé : 18)
-- Possibilité de drill-down sur chaque nœud pour isoler les combinaisons fournisseur × type × risque
+
+• **549 anomalies totales** décomposées en 6 catégories distinctes via un graphique en cascade  
+• **Livraison en retard (291)** et **fournisseur non approuvé (140)** représentent 78 % des anomalies — priorités d’action claires  
+• **Prix anormal (50), date manquante (30), quantité invalide (20) et ID invalide (18)** — anomalies de données structurelles à corriger à la source ERP  
+• **Arbre des causes racines** : décomposition interactive des 348 anomalies par niveau de risque (moyen : 227 / faible : 103 / élevé : 18)  
+• Possibilité de drill-down sur chaque nœud pour isoler les combinaisons fournisseur × type × risque  
 
 ---
 ## Architecture & flux de données
@@ -96,9 +97,10 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 
 ### Power Query — ETL & validation
 - Règles de validation métier appliquées à la source
-- Détection automatisée de 5+ types d'anomalies (retards, écarts de prix, données manquantes…)
-- Classification par niveau de risque (Faible / Moyen / Élevé)
-- Transformation robuste et reproductible
+- Détection automatisée de plus de 5 types d’anomalies (retards, écarts de prix, données manquantes, etc.)
+- Classification par niveau de risque (faible / moyen / élevé)
+- Transformation des données robuste et reproductible
+- Possibilité d’extraction de données à partir d’un système MRP via SQL (requêtes, jointures et agrégations)
 
 ### Modélisation des données
 - **Schéma en étoile** optimisé pour la performance DAX
@@ -136,7 +138,7 @@ CALCULATE(
 | Indicateur | Valeur |
 |---|---|
 | Commandes analysées | 500 |
-| Anomalies détectées | 502 |
+| Anomalies détectées | 549 |
 | Taux d'anomalies | **73.2%** |
 | Exposition financière estimée | **12,43 M$** |
 | Livraisons en retard | 291 |
@@ -158,18 +160,17 @@ Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérie
 
 ## Structure du dépôt
 
-```
-📁 erp-data-quality-powerbi/
-├── 📊 PowerBI_Controle_Qualite_Donnees_ERP.pbix   # Fichier Power BI complet
-├── 📁 donees/
-│   └── donnees_erp_qualite_controles_powerbi.xlsx       # Données synthétiques source
-├── 📁 captures/
-│   ├── tab1-overview.png           # Vue d'ensemble
-│   └── tab2-diagnostic.png         # Diagnostic opérationnel
-│   └── tab3-causes.png             # Diagnostic opérationnel
-│   └── 📄 flux-de-donnees.png      # Diagramme d'architecture
-└── 📄 README.md
-```
+Cette vue illustre l’organisation globale du projet, structurée en trois composantes principales : le tableau de bord analytique, la couche de données et les actifs de documentation.
+
+<p align="center">
+  <img src="captures/structure-projet-powerbi-qualite-donnees-erp.png" 
+       alt="Structure du projet Power BI – Qualité des données ERP" 
+       width="100%"/>
+</p>
+
+<p align="center">
+  <em>Organisation modulaire de la solution, conçue pour assurer la lisibilité, la maintenabilité et l’évolutivité.</em>
+</p>
 
 ---
 
@@ -177,10 +178,10 @@ Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérie
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/victorgvc-hes/erp-data-quality-powerbi.git
+git clone https://github.com/victorgvc-hes/erp-qualite-donnees-powerbi.git
 
 # 2. Ouvrir le fichier dans Power BI Desktop
-#    File > Open > ERP_Data_Quality.pbix
+#    File > Open > PowerBI_Controle_Qualite_Donnees_ERP.pbix
 
 # 3. Si nécessaire, actualiser la source de données
 #    Home > Transform Data > Data Source Settings
