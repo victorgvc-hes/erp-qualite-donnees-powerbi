@@ -178,7 +178,7 @@ Cette vue illustre l’organisation globale du projet, structurée en trois comp
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/victorgvc-hes/erp-qualite-donnees-powerbi.git
+git clone https://github.com/victorgvc-hes/powerbi-erp-qualite-donnees.git
 
 # 2. Ouvrir le fichier dans Power BI Desktop
 #    File > Open > PowerBI_Controle_Qualite_Donnees_ERP.pbix
