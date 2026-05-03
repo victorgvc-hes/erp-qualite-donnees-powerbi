@@ -37,7 +37,7 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 ---
 ## Cas d’usage métier
 
-Ce tableau de bord permet de :
+Ce tableau de bord permet à une organisation de :
 
 • Identifier rapidement les anomalies critiques  
 • Prioriser les actions correctives  
@@ -55,7 +55,7 @@ Ce tableau de bord permet de :
 
 **Lecture en 10 secondes :**
 - **500 commandes** analysées
-- **366 commandes affectées** (73.2% du portefeuille)
+- **366 commandes affectées** (73,2% du portefeuille)
 - **291 livraisons en retard** — risque opérationnel critique
 - Concentration chez 3 fournisseurs : **Ferantis, Gagnon Inc, Nordex** (>100 anomalies chacun)
 
@@ -63,7 +63,7 @@ Ce tableau de bord permet de :
 
 ### Onglet 2 — Diagnostic opérationnel : Analyse des anomalies
 
-> Analyse cause-racine par acheteur, fournisseur, usine et niveau de risque
+> Analyse des causes racines par acheteur, fournisseur, usine et niveau de risque
 
 ![Analyse des anomalies – Diagnostic opérationnel](captures/tab2-diagnostic.png)
 
@@ -81,13 +81,13 @@ Ce tableau de bord permet de :
 
 ![Analyse des causes des anomalies](captures/tab3-causes.png)
 
-**Ce qu'on voit en 10 secondes :**
+**Lecture en 10 secondes :**
 
 • **549 anomalies totales** décomposées en 6 catégories distinctes via un graphique en cascade  
 • **Livraison en retard (291)** et **fournisseur non approuvé (140)** représentent 78 % des anomalies — priorités d’action claires  
 • **Prix anormal (50), date manquante (30), quantité invalide (20) et ID invalide (18)** — anomalies de données structurelles à corriger à la source ERP  
 • **Arbre des causes racines** : décomposition interactive des 348 anomalies par niveau de risque (moyen : 227 / faible : 103 / élevé : 18)  
-• Possibilité de exploration hiérarchique sur chaque nœud pour isoler les combinaisons fournisseur × type × risque  
+• Possibilité d’exploration hiérarchique sur chaque nœud pour isoler les combinaisons fournisseur × type × risque  
 
 ---
 ## Architecture & flux de données
@@ -136,7 +136,7 @@ CALCULATE(
 
 ### Conception du tableau de bord
 - Filtres croisés dynamiques (Usine / Acheteur / Fournisseur / Période)
-- Exploration hiérarchique hiérarchique : Fournisseur → Catégorie → Usine → Acheteur
+- Exploration hiérarchique : Fournisseur → Catégorie → Usine → Acheteur
 - KPI cards avec seuils visuels
 - Palette cohérente orientée lisibilité opérationnelle
 
@@ -158,7 +158,7 @@ CALCULATE(
 
 ## Pourquoi ce projet se distingue
 
-Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérience terrain** en solution analytique conçu pour être directement transposable dans un environnement ERP réel :
+Ce n'est pas un tutoriel reproduit. C'est la **traduction directe d'une expérience terrain** en solution analytique conçue pour être directement transposable dans un environnement ERP réel :
 
 - **Domaine métier profond** : Les règles de validation reflètent de vraies pratiques d'achat (PO, réception, facturation)
 - **Pensée système** : Du problème ERP → ETL → modèle → KPI → décision opérationnelle
