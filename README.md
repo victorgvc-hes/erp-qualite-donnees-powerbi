@@ -45,11 +45,6 @@ Ce tableau de bord permet à une organisation de :
 • Améliorer la performance des fournisseurs et des acheteurs  
 
 ---
-
-## Aperçu du tableau de bord
-
----
-
 ## Aperçu du tableau de bord
 
 ### Onglet 1 — Vue d'ensemble : Qualité des données ERP
