@@ -55,7 +55,7 @@ Ce tableau de bord permet à une organisation de :
 
 **Lecture en 10 secondes :**
 - **500 commandes** analysées
-- **366 commandes affectées** (73,2% du portefeuille)
+- **366 commandes affectées** (73,2 % du portefeuille)
 - **291 livraisons en retard** — risque opérationnel critique
 - Concentration chez 3 fournisseurs : **Ferantis, Gagnon Inc, Nordex** (>100 anomalies chacun)
 
@@ -148,7 +148,7 @@ CALCULATE(
 |---|---|
 | Commandes analysées | 500 |
 | Anomalies détectées | 549 |
-| Taux d'anomalies | **73,2%** |
+| Taux d'anomalies | **73,2 %** |
 | Exposition financière estimée | **12,43 M$** |
 | Livraisons en retard | 291 |
 | Fournisseurs à risque concentré | 3 (Ferantis, Gagnon Inc, Nordex) |
