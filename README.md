@@ -37,7 +37,7 @@ Les organisations dépendant de systèmes ERP font face à des défis persistant
 ---
 ## Cas d’usage métier
 
-Ce tableau de bord permet à une organisation de :
+Ce tableau de bord permet de :
 
 • Identifier rapidement les anomalies critiques  
 • Prioriser les actions correctives  
