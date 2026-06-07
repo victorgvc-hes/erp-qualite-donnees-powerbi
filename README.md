@@ -207,7 +207,7 @@ git clone https://github.com/victorgvc-hes/powerbi-erp-qualite-donnees.git
 
 **Victor Vergara**
 
-*Professionnel des opérations et de la chaîne d’approvisionnement | 20+ ans d’expérience*  
+*Professionnel des opérations et de la chaîne d’approvisionnement | 15+ ans d’expérience*  
 *Spécialisation : Intelligence d’affaires (Power BI) • Analyse de données ERP • Optimisation des processus*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio%20complet-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/victorgvc-hes?tab=repositories)
